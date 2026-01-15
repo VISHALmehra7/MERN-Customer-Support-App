@@ -19,7 +19,7 @@ const SocketContextProvider = ({ children }) => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      const socket = io("http://localhost:4000");
+      const socket = io("https://mern-customer-support-app.onrender.com");
       setSocket(socket);
       return () => socket.close();
     } else {
