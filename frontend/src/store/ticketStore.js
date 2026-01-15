@@ -110,7 +110,7 @@ export const ticketStore = create((set) => ({
   },
   setUserTicketNull: () => {
     try {
-      set({ userTicket: null });
+      set({ userTicket: [] });
     } catch (error) {
       console.log(error);
     }

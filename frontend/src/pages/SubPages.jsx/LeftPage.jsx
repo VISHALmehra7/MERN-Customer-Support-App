@@ -98,7 +98,6 @@ const LeftPage = () => {
 
   useEffect(() => {
     ticketToRender();
-    console.log(ticketToRender()?.length);
   }, [ticketButtonInputs]);
 
   return (
