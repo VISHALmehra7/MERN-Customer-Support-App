@@ -27,10 +27,10 @@ const AIChatBox = ({
               {askedQuestion ? askedQuestion : null}
             </div>
           ) : (
-            <div className="flex flex-col items-center justify-center gap-3">
+             role==="user" ?  <div className="flex flex-col items-center justify-center gap-3">
               <Placeholder label={"Ask AI for solutions"} />
               <Placeholder label={"AI remembers past solutions"} />
-            </div>
+            </div>:null
           )}
         </div>
         <div className="flex flex-col justify-start items-start text-sm p-1">
